@@ -1,0 +1,846 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+/* img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+} */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    /* background: #fff;
+    color: #000;
+    font-family: utma;
+    font-size: 1.6rem;
+    line-height: 2.5rem; */
+    margin: auto;
+    max-width: 100%;
+    text-transform: none;
+    width: 100%;
+}
+ul{
+    margin-bottom: 0;
+}
+.header {
+    /* --background-color: #fff;
+    --text-color: #000; */
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    transition: all .4s;
+    width: 100%;
+    z-index: 500;
+}
+.header-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 15px;
+    border-bottom: 5px solid transparent;
+    transition: all 450ms ease;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-nav li{
+    height: 100%;
+  }
+  .header-link:hover {
+    background-color: #000;
+    color: #fbae17;
+    border-bottom: 5px solid #fbae17;
+  }
+  .btn-header {
+    align-items: center;
+    background-color: #fbae17;
+    border-radius: 50px;
+    display: flex;
+    font-family: utmab;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 20px;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    height: 46px;
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    transition: all 450ms ease;
+  }
+  .btn-header:hover {
+    background-color: #000;
+    color: #fbae17;
+  }
+.menu_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+.header .container{
+    height: 70px;
+    transition: all 0.4s;
+}
+.logo{
+    width: 18.5rem;
+    flex-shrink: 0;
+    height: 4.3rem;
+    
+}
+.logo img{
+    display: none;
+    height: 100%;
+    /* -o-object-fit: contain; */
+    object-fit: contain;
+    width: 100%;
+}
+.logo img:first-child{
+    display: block;
+}
+a {
+    color: #000;
+    outline: 0;
+    text-decoration: none;
+}
+.menu_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_item .li_item{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.header .li_item{
+    align-items: center;
+    color: black;
+    display: block;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+.hero {
+    background-image: url("https://milanocoffee.com.vn/wp-content/uploads/2022/05/product-home-banner.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    background-position: center center;
+  }
+  .hero::before{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+  }
+  .hero-container > h1 {
+    color: #fbae17;
+    font-size: 60px;
+    line-height: 86.4px;
+    text-transform: uppercase;
+    align-items: center;
+    margin: auto;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    width: -webkit-fill-available;
+    /* position: absolute;
+    z-index: 100;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%); */
+
+  }
+.section_itemone{
+    padding-bottom: 30px;
+}
+.breadcrumbs {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+.breadcrumbs-item:first-child {
+    padding-left: 0;
+}
+.breadcrumbs-item {
+    align-items: center;
+    display: inline-flex;
+}
+.breadcrumbs-item a {
+    color: #a7a7a7;
+    padding: 1.1rem 0.5rem;
+}
+.breadcrumbs-item:not(:last-child):after {
+    background-image: url('https://milanocoffee.com.vn/img/icon-dropdown.svg');
+    content: "";
+    display: block;
+    filter: invert(1);
+    height: 10px;
+    pointer-events: none;
+    position: relative;
+    top: 2px;
+    transform: rotate(-90deg);
+    width: 10px;
+}
+.breadcrumbs-item.active a {
+    color: #fbae17;
+    font-weight: bold;
+    /* font-family: utmab; */
+}
+.leaves{
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 60px;
+    font-size: 60px;
+}
+.head-content{
+    margin-bottom: 55px;
+}
+.head-content .content {
+    margin: 0 auto;
+    max-width: 550px;
+    text-align: center;
+}
+.main-title {
+    display: block;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: normal;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.about-slider{
+    /* --content-padding: 30px; */
+    background-color: #feefd1;
+    display: flex;
+    margin-bottom: 60px;
+    padding: 25px;
+}
+.slider-content{
+    padding-left: 30px;
+    text-align: left;
+}
+.slide-number {
+    color: #bfbfbf;
+    display: block;
+    font-size: 95px;
+    line-height: 1;
+    margin-bottom: 0.3em;
+}
+.title-text{
+    color: #6f3800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: 35px;
+}
+ .slider-content p {
+    color: #000;
+    font-size:19px;
+}
+.section_itemtwo{
+    padding: 80px 0;
+    background-color: #000;
+}
+.modal-item__img {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.modal-item__img::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+    opacity: 0;
+    transition: transform .4s ease;
+}
+.modal_item:hover .modal-item__img{
+    opacity: 0.7;
+    transition: transform .4s ease;
+}
+.modal-item__headline {
+    align-items: center;
+    background-color: rgba(49,47,47,.95);
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    left: 0;
+    line-height: 1;
+    padding: 12px 0;
+    position: absolute;
+    text-align: center;
+    transition: all .4s;
+    width: 100%;
+    z-index: 2;
+    
+    text-transform: uppercase;
+}
+.headline{
+    font-size: 23px;
+}
+.modal_item{
+    /* --heightHeadline: 8rem;
+    --heightItem: ; */
+    border-radius: 1.5rem;
+    height:450px;
+    /* margin-bottom: var(--modal-gap); */
+    overflow: hidden;
+    position: relative;
+    display: inherit;
+    
+}
+.modal-item__img img{
+    height: 100%;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+   
+    object-fit: cover;
+    width: 100%;
+}
+
+ .modal-item__headline {
+    background-color: rgba(49,47,47,.95);
+    color: #fff;
+    transition: all .4s;
+}
+ .modal_item:hover .modal-item__headline {
+    background-color: rgba(251,174,23,.95);
+    color: #000;
+    transition: all .4s;
+}
+.modal_item:hover .modal-item__img img {
+    transform:  scale(1.04);
+    transition: transform .4s ease;
+}
+.section_itemthree{
+    padding: 80px 0;
+    
+}
+.mini-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px;
+    background-color: #f4f3f2;
+    text-align: center;
+    border-radius: 10px;
+    height: 304px;
+}
+.icen_style{
+    height: 100px;
+    width: 100px;
+}
+ .mini-card svg path {
+    fill: #fbae17;
+}
+svg{
+    height: 100%;
+}
+.mini-card p {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+.content-card{
+    background-image:url('https://milanocoffee.com.vn/wp-content/uploads/2022/05/hightlight-product-image-1.jpg') ;
+    
+}
+.content-card {
+    
+    align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    height: 500px;
+    margin-bottom: 23px;
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-end;
+    padding: 65px;
+}
+.main-content {
+    color: #fff;
+    max-width: 400px;
+}
+.main-title{
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content-card:last-child{
+    background-image: url('https://milanocoffee.com.vn/wp-content/uploads/2022/05/hightlight-product-image-2.jpg');
+}
+.btn-main{
+    align-items: center;
+    background-color: #fbae17;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    height: 46px;
+    justify-content: center;
+    padding: 0 25px;
+    width: max-content;
+    align-items: center;
+    z-index: 10;
+    margin-top: 35px;
+    gap: 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: max-content;
+    transition: 0.5s all;
+}
+.card_title{
+    font-size: 18px;
+}
+.btn-main:hover{
+    background-color: #000;
+    color: #fbae17;
+}
+.content-card:last-child{
+    justify-content: flex-start;
+}
+.menu-section{
+    padding: 80px 0;
+}
+.menu_h2{
+    color: #fbae17;
+    margin-bottom: 5rem;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.menu_box{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.menu_box span{
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+    position: absolute;
+    z-index: 100;
+}
+.menu_daxay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+    object-fit: cover;
+}
+.menu-section{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+.view_more{
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.mini-card p{
+    font-size: 18px;
+}
+.btn-list,.btn-off{
+  background: transparent;
+  border: 0;
+}
+
+/* footer */
+.footer {
+    background-image: url("https://milanocoffee.com.vn/wp-content/themes/main2022/img/footer-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-weight: 700;
+  }
+  .footer-wrapper {
+    height: 100%;
+    padding: 70px 0;
+    background-color: #000;
+    opacity: 0.9;
+  }
+  .footer-container {
+    z-index: 99;
+  }
+  .btn_group{
+    max-width: 40px;
+  }
+  /* footer-left */
+  
+  .footer-headline {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .footer-info {
+    margin-top: 30px;
+    gap: 29px 0;
+  }
+  .footer-item > span {
+    font-weight: 100 !important;
+  }
+  /* end footer-left */
+  
+  /* footer-center */
+  .footer-text > h4 {
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .center-socials {
+    gap: 0 25px;
+  }
+  .center-social {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-menu {
+    margin-top: 17px;
+  }
+  .footer-menu > a {
+    color: #fff;
+    margin-bottom: 4px;
+    font-weight: 100;
+  }
+  .footer-download {
+    margin-top: 28px;
+  }
+  .qr-wrapper {
+    gap: 0 10px;
+  }
+  .qr {
+    width: 230px;
+  }
+  .center-qr {
+    height: auto;
+    gap: 10px 0;
+  }
+  .center-qr-app > img:nth-child(1),
+  .center-qr-gg > img:nth-child(1) {
+    width: auto;
+    height: 39px;
+  }
+  .center-qr-app > img:nth-child(2),
+  .center-qr-gg > img:nth-child(2) {
+    max-width: 100%;
+  }
+  /* end footer-center */
+  /* footer-right */
+  
+  .phone {
+    margin-top: 16px;
+  }
+  .phone > a {
+    color: #fbae17;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .footer-branchs {
+    margin-top: 40px;
+  }
+  .branch {
+    margin-top: 15px;
+  }
+  .branch-title > h4 {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  .branch-title > span {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 100;
+  }
+  .header-logo img{
+    width: 200px;
+  }
+  .footer-medias {
+    margin-top: 30px;
+  }
+  .media > a {
+    color: #fff;
+    font-size: 32px;
+    transition: all 450ms ease-in-out;
+  }
+  .media > a:hover {
+    color: #fbae17;
+  }
+  .btn-list,.btn-off{
+    display: none;
+  }
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .about-slider img{
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .title-text{
+        font-size: 30px;
+    }
+    .slider-content.active{
+        margin-top: 30px;
+    }
+}
+/* @media screen and (max-width:886px) {
+    .footer-column{
+        max-width: 50%;
+    }
+} */
+@media screen and (max-width:768px) {
+    .first{
+        text-align: end;
+    }
+    .first_btn{
+        display: inline-flex ;
+    }
+    
+    
+}
+@media screen and (max-width:457px) {
+    .main-title{
+        font-size: 30px;
+    }
+    .content-card{
+        padding: 50px;
+    }
+    .slider-content{
+        padding-left: 0;
+       }
+}
+@media screen and (max-width:378px) {
+    .main-title{
+        font-size: 25px;
+    }
+    .content-card{
+        padding: 50px;
+    }
+    .btn-main{
+        font-size: 9px;
+    }
+    .card_title {
+        font-size: 13px;
+    }
+   .h3_first{
+    text-align: end;
+   }
+   .h3_sencond{
+    text-align: start;
+   }
+   .slider-content{
+    padding-left: 0;
+   }
+}
+@media screen and (max-width:335px) {
+    .main-title{
+        font-size: 18px;
+    }
+}
+.foooter_container{
+    max-width: 100% !important;
+}
+/* Mobile and Tablet */
+.logo_header img{
+  width: 200px;
+}
+.custom-nav li{
+  display: inline-block;
+}
+.custom-nav li a{
+  padding: 10px 15px;
+  display: inline-block;
+}
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+  .header-container {
+    position: relative;
+    height: 100%;
+  }
+  /* .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+  ul{
+    padding-left: 0;
+  }
+  .header-nav {
+    background-color: #000;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 120%;
+    /* height: 100vh; */
+    transform: translateX(100%);
+  }
+  .header-nav.is-show {
+    transform: translateX(-63px);
+    animation-name: showMenu;
+    animation-duration: 0.5s;
+    top: 70px;
+  }
+
+  @keyframes showMenu {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-63px);
+    }
+  }
+
+  .header-nav > li {
+    width: 100%;
+  }
+  .header-link,
+  .header-nation {
+    padding: 20px 0;
+    color: #fff;
+  }
+  /* .btn_header{
+    display: contents;
+  } */
+  .btn_header{
+    border-radius: 0;
+  }
+  .header{
+    position: fixed;
+  }
+  .about-container,
+  .code-wrapper {
+    flex-direction: column;
+  }
+  .about-image {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .raw-material {
+    flex-direction: column-reverse;
+  }
+  .code-wrapper {
+    gap: 40px 0;
+  }
+  .btn-list {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .btn-off{
+    display: none;
+  }
+  .btn-list.is-close {
+    display: none;
+  }
+  .btn-off.is-close {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .btn-list.is-active {
+    display: inline-block;
+  }
+  .btn-off.is-hidden {
+    display: none;
+  }
+  .qr-wrapper {
+    justify-content: flex-start !important;
+  }
+  .footer-text {
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .header-logo {
+    width: 120px;
+  }
+  .header-nav.is-show {
+    transform: translateX(-20px);
+  }
+  .btn-header {
+    font-size: 7px;
+    line-height: 35px;
+    height: 35px;
+  }
+  .header-logo img {
+    width: 125px;
+}
+
+  @keyframes showMenu {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-22px);
+    }
+  }
+  .hero-container > h1 {
+    font-size: 23px;
+  }
+  .code-image {
+    width: auto;
+    height: 342px;
+  }
+  .footer-wrapper {
+    padding: 17px 10px;
+    opacity: 0.8;
+  }
+
+  .qr {
+    width: 100px;
+  }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
